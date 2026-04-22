@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Editar Producto</h2>
+
+<form method="POST" class="form-box">
+    <input name="nombre" value="{{ producto.nombre }}" required>
+    <input name="categoria" value="{{ producto.categoria }}" required>
+    <input name="precio" type="number" step="0.01" value="{{ producto.precio }}" required>
+    <input name="stock" type="number" value="{{ producto.stock }}" required>
+
+    <button class="btn btn-warning">Actualizar</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Registrar Producto</h2>
+
+<form method="POST" class="form-box">
+    <input name="nombre" placeholder="Nombre" required>
+    <input name="categoria" placeholder="Categoría" required>
+    <input name="precio" type="number" step="0.01" placeholder="Precio" required>
+    <input name="stock" type="number" placeholder="Stock" required>
+
+    <button class="btn btn-success">Guardar</button>
+</form>
+
+{% endblock %}
